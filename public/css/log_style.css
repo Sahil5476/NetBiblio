@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+:root{
+    --cream: #ede4db;
+}
+body{
+    font-family: sans-serif;
+    overflow: scroll;
+}
+
+header{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+section{
+    max-width:270px;
+    min-width:200px;
+    padding: 20px 15px;
+    margin:50px auto 25px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0, 0, 0.1);
+    border-radius: 5px;
+}
+
+section>h2{
+    margin: 0 0 4px 0;
+    font-size: 2em;
+    font-weight:600;
+}
+
+section>p{
+    font-size: 0.70em;
+    margin-top: 0;
+    font-weight: 450;
+}
+
+section input{
+    padding:8px;
+    font-size:0.8em;
+    width:100%;
+    height:40px;
+    margin-bottom: 10px;
+    border:1px solid rgba(0,0, 0, 0.4);
+    border-radius:2px;
+    opacity:1;
+    transition:0.3s ease;
+}
+
+section input:focus{
+    outline: none;
+    font-size: 0.9em;
+}
+
+.password{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.password input{
+    border: none;
+    padding: 9px;
+    margin:0;
+}
+
+.password input:focus{
+    outline:none;
+}
+
+.password a{
+    font-size: 12px;
+    padding:10px;
+    color:var(--cream);
+    font-weight: bold;
+}
+
+section a#pwd-change{
+    display: block;
+    color:var(--cream);
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    margin: 9px 0 14px;
+}
+
+section a#pwd-change:hover{
+    font-size: 14px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    color:white;
+    background-color: var(--cream);
+    font-size: 0.8em;
+    box-shadow: 1px 1px 2px 1px rgba(0,0, 0, 0.4);
+    transition:0.3s ease;
+}
+
+.button:hover{
+    cursor:pointer;
+    font-size: 1em;
+    box-shadow: none;
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+}
+
+.flex p{
+    padding: 5px;
+    font-size: 12px;
+}
+
+.hor-line{
+    height: 1px;
+    width:44%;
+    background-color: rgba(50,50,50,0.3);
+}
+
+#apple-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: aliceblue;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgba(0,0, 0, 0.6);
+    box-shadow: 1px 1px 2px 1px rgba(0,0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+#apple-icon:hover{
+    font-size: 1em;
+    box-shadow: none;
+    padding: auto;
+}
+
+main>p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+main>p a{
+    color:#ede4db;
+    transition: 0.3 ease;
+}
+
+main>p a:hover{
+    font-size: 12px;
+}
+
+footer{
+    width: 600px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 10px;
+    padding:5px;
+    margin:100px auto 10px;
+}
+
+footer a{
+    color: rgba(0,0, 0, 0.6);
+}
+
+.rms{
+    font-weight: 800;
+    color: white;
+    background-color: rgba(0,0, 0, 0.6);
+    padding: 0 1px;
+    border-radius: 2px;
+}
