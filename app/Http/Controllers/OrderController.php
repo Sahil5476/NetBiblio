@@ -14,18 +14,19 @@ class OrderController extends Controller
      */
     public function checkout()
     {
-        $userId = Auth::id();
+        $user_id = Auth::id();
         
-        // Get all cart items for this user
-        $cartItems = Cart::where('user_id', $userId)->get();
+        // 1. Get all cart items for this user
+        $cartItems = Cart::where('user_id', $user_id)->get();
         
-        // Calculate Grand Total
-        $grandTotal = 0;
+        // 2. Calculate the Grand Total
+        $grand_total = 0;
         foreach($cartItems as $item){
-            $grandTotal += ($item->price * $item->quantity);
+            $grand_total += ($item->price * $item->quantity);
         }
 
-        return view('checkout', compact('cartItems', 'grandTotal'));
+        // 3. Send both variables to the view
+        return view('checkout', compact('cartItems', 'grand_total'));
     }
 
     /**
